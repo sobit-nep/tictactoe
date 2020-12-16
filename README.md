@@ -1,1 +1,1 @@
-# jQuery tictactoe
+# jQuery TicTacToe
