@@ -1,1 +1,1 @@
-# jQuery TicTacToe
+# jQuery multiplayer TicTacToe 
