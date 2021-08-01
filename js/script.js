@@ -23,7 +23,7 @@ $(document).ready(function(){
 			spot1.hasClass('o') && spot5.hasClass('o') && spot9.hasClass('o') ||
 			spot3.hasClass('o') && spot5.hasClass('o') && spot7.hasClass('o')
 		){
-			alert('Winner: O');
+			parent.window.alert('Winner: O');
 			$('#board li').text('+');
 			$('#board li').removeClass('disable');
 			$('#board li').removeClass('o');
@@ -50,7 +50,7 @@ $(document).ready(function(){
 			$('#board li').removeClass('x');
 			turns = 0;
 		} else if($(this).hasClass('disable')){
-			alert('This spot is already filled');
+			parent.window.alert('This spot is already filled');
 		} else if(turns%2 == 0){
 			turns++;
 			$(this).text(o);
@@ -64,7 +64,7 @@ $(document).ready(function(){
 				spot1.hasClass('o') && spot5.hasClass('o') && spot9.hasClass('o') ||
 				spot3.hasClass('o') && spot5.hasClass('o') && spot7.hasClass('o')
 			){
-				alert('Winner: O');
+				parent.window.alert('Winner: O');
 				turns = 0;
 			}
 		} else {
@@ -80,7 +80,7 @@ $(document).ready(function(){
 				spot1.hasClass('x') && spot5.hasClass('x') && spot9.hasClass('x') ||
 				spot3.hasClass('x') && spot5.hasClass('x') && spot7.hasClass('x')
 			){
-			alert('Winner: X');
+			parent.window.alert('Winner: X');
 			turns = 0;
 			}
 		}
